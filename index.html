@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Image Generator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <section class="nav__container">
+        <img class="logo" src="./assets/" alt="Cat Image Generator Logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Find Your Cat</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    
+    <header>
+      <h1>Cat Image Generator</h1>
+      <h2>Enter a cat breed or characteristic to generate your perfect feline friend!</h2>
+    </header>
+    <main>
+        <section class="generate__button--container">
+      <input type="text" id="category" placeholder="Enter a type of cat" />
+      <button onclick="generateCats()">Generate Cats</button>
+      <div id="cat-images"></div>
+    </section>
+    <section class="pregenerated-cats">
+        <h2>Check out these adorable cats!</h2>
+        <div class="cat-grid">
+          <img src="./assets/cat1.jpg" alt="Cute cat 1" />
+          <img src="./assets/cat2.jpg" alt="Cute cat 2" />
+          <img src="./assets/cat3.jpg" alt="Cute cat 3" />
+          <img src="./assets/cat4.jpg" alt="Cute cat 4" />
+          <img src="./assets/cat5.jpg" alt="Cute cat 5" />
+          <img src="./assets/cat6.jpg" alt="Cute cat 6" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Cat Image Generator</p>
+    </footer>
+  </body>
+</html>
