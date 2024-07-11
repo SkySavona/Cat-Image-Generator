@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Image Generator</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon (1).ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <img 
+          class="logo"
+          src="./assets/cat_image_generator.png"
+          alt="Cat Image Generator Logo"
+        />
+        <div class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#breed-select">Generate Your Cat</a></li>
+          <li><a href="#" style="cursor: not-allowed">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mobile-menu">
+        <div class="close-button">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="index.html">Generate Your Cat</a>
+        <a href="" style="cursor: not-allowed">Contact</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Cat Image Generator</h1>
+      <h2>Pick a cat breed to generate your perfect feline friend!</h2>
+    </header>
+
+    <main>
+      <section class="generate__button--container">
+        <select id="breed-select">
+          <option value="">All Breeds</option>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <button onclick="generateCats()">Generate Cats</button>
+      </section>
+
+      <section class="home__image--container">
+        <div>
+          <img
+            class="home__image"
+            src="./assets/home_page_image.svg"
+            alt="Home Page Image"
+          />
+        </div>
+      </section>
+
+      <section id="cat-images" class="generated-cats" style="display: none">
+        <h2 class="generated-cats-heading">Check out your cats!</h2>
+        <h2 class="loading-message" style="display: none">
+          Loading adorable cats...
+        </h2>
+        <div class="loading-container" style="display: none">
+          <div class="loading-cats">
+            <img src="assets/1.png" alt="Loading cat 1" class="cat-icon" />
+            <img src="assets/2.png" alt="Loading cat 2" class="cat-icon" />
+            <img src="assets/3.png" alt="Loading cat 3" class="cat-icon" />
+            <img src="assets/4.png" alt="Loading cat 4" class="cat-icon" />
+          </div>
+        </div>
+        <div class="generated-cat-grid">
+          <img alt="Generated cat 1" />
+          <img alt="Generated cat 2" />
+          <img alt="Generated cat 3" />
+          <img alt="Generated cat 4" />
+          <img alt="Generated cat 5" />
+          <img alt="Generated cat 6" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Cat Image Generator</p>
+    </footer>
+  </body>
+</html>
