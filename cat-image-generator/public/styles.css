@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+body {
+    font-family: "Fredoka One", cursive;
+    background-color: rgb(241, 141, 153);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  }
+
+nav {
+  background-color: #87ceeb;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  display: inline-block;
+}
+
+nav li:nth-child(1) a {
+  animation-delay: 0.2s;
+}
+nav li:nth-child(2) a {
+  animation-delay: 0.4s;
+}
+nav li:nth-child(3) a {
+  animation-delay: 0.6s;
+}
+nav li:nth-child(4) a {
+  animation-delay: 0.8s;
+}
+
+nav li a:hover {
+  color: #ffdab9;
+  transform: scale(1.1);
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: #87ceeb;
+}
+
+h1,
+h2 {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  animation-delay: 1s;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  animation-delay: 1.2s;
+}
+
+#tag-suggestions {
+  position: absolute;
+  border: 1px solid #ddd;
+  background-color: white;
+  z-index: 1000;
+}
+
+#tag-suggestions div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#tag-suggestions div:hover {
+  background-color: #f0f0f0;
+}
+
+.generate__button--container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+input,
+button {
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-family: "Fredoka One", cursive;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+input {
+  background-color: #fffacd;
+  color: #87ceeb;
+  width: 60%;
+  max-width: 400px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation-delay: 1.4s;
+}
+
+button {
+  background-color: #87ceeb;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation-delay: 1.6s;
+}
+
+button:hover {
+  background-color: #ffdab9;
+  transform: scale(1.05);
+}
+
+.home__image--container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.home__image {
+  width: 200px;
+  height: 200px;
+  margin-top: -20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+#cat-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  justify-content: center;
+}
+
+#cat-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+#cat-images img:nth-child(1) {
+  animation-delay: 1.2s;
+}
+#cat-images img:nth-child(2) {
+  animation-delay: 1.4s;
+}
+#cat-images img:nth-child(3) {
+  animation-delay: 1.6s;
+}
+#cat-images img:nth-child(4) {
+  animation-delay: 1.8s;
+}
+#cat-images img:nth-child(5) {
+  animation-delay: 2s;
+}
+#cat-images img:nth-child(6) {
+  animation-delay: 2.2s;
+}
+
+#cat-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #87ceeb;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+footer p {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.generated-cats {
+  display: none;
+  background-color: #87ceeb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.generated-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.generated-cat-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.generated-cats h2 {
+  color: white;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 3.2s;
+}
+
+.generated-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.generated-cat-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.generated-cat-grid img:nth-child(1) {
+  animation-delay: 3.4s;
+}
+.generated-cat-grid  img:nth-child(2) {
+  animation-delay: 3.6s;
+}
+.generated-cat-grid img:nth-child(3) {
+  animation-delay: 3.8s;
+}
+.generated-cat-grid  img:nth-child(4) {
+  animation-delay: 4s;
+}
+.generated-cat-grid  img:nth-child(5) {
+  animation-delay: 4.2s;
+}
+.generated-cat-grid  img:nth-child(6) {
+  animation-delay: 4.4s;
+}
+
+.generated-cat-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .generated-cat-grid  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .generated-cat-grid  {
+    grid-template-columns: 1fr;
+  }
+}
